@@ -173,18 +173,15 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Reference Include="Mono.Data.Sqlite">
-      <HintPath>..\GISMapUserControls\DllReface\Mono.Data.Sqlite.dll</HintPath>
-    </Reference>
     <Reference Include="Mono.Security">
-      <HintPath>..\GISMapUserControls\DllReface\Mono.Security.dll</HintPath>
+      <HintPath>..\UnitTest\References\Mono.Security.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data">
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Data.SQLite">
-      <HintPath>..\GISMapUserControls\DllReface\System.Data.SQLite.DLL</HintPath>
+      <HintPath>..\UnitTest\References\System.Data.SQLite.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.SqlServerCe">
       <SpecificVersion>False</SpecificVersion>

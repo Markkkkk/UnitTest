@@ -60,6 +60,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="References\Mono.Security.dll" />
     <Content Include="References\System.Data.SQLite.dll" />
   </ItemGroup>
   <ItemGroup>

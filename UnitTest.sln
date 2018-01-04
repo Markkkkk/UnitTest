@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{BF015B4E-D8C0-4D4C-983D-86B59BE66056}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E06DEF77-F933-42FB-AFD7-DB2D0D8D6A98} = {E06DEF77-F933-42FB-AFD7-DB2D0D8D6A98}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GMap", "GMap", "{390A1C75-5255-4AD0-A388-76DB3D17D95D}"
 EndProject

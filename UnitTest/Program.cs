@@ -35,8 +35,8 @@ namespace UnitTest
         {
             MapPointOperate op = new MapPointOperate();
             op.CalcPicCountAndSave();
-            Console.Out.WriteLine("Let's begin.");
-            Console.In.ReadLine();
+            Console.Out.WriteLine("It's done.");
+            Console.In.Read();
             
         }
     }

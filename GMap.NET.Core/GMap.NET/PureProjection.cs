@@ -233,14 +233,35 @@ namespace GMap.NET
          return ret;
       }
 
-      /// <summary>
-      /// The ground resolution indicates the distance (in meters) on the ground that’s represented by a single pixel in the map.
-      /// For example, at a ground resolution of 10 meters/pixel, each pixel represents a ground distance of 10 meters.
-      /// </summary>
-      /// <param name="zoom"></param>
-      /// <param name="latitude"></param>
-      /// <returns></returns>
-      public virtual double GetGroundResolution(int zoom, double latitude)
+        /// <summary>
+        /// gets all tiles in rect at specific zoom
+        /// </summary>
+        public int GetAreaTileCount(RectLatLng rect, int zoom, int padding)
+        {
+            int ret = 0;
+
+            GPoint topLeft = FromPixelToTileXY(FromLatLngToPixel(rect.LocationTopLeft, zoom));
+            GPoint rightBottom = FromPixelToTileXY(FromLatLngToPixel(rect.LocationRightBottom, zoom));
+
+            for (long x = (topLeft.X - padding); x <= (rightBottom.X + padding); x++)
+            {
+                for (long y = (topLeft.Y - padding); y <= (rightBottom.Y + padding); y++)
+                {
+                    ret++;
+                }
+            }
+
+            return ret;
+        }
+
+        /// <summary>
+        /// The ground resolution indicates the distance (in meters) on the ground that’s represented by a single pixel in the map.
+        /// For example, at a ground resolution of 10 meters/pixel, each pixel represents a ground distance of 10 meters.
+        /// </summary>
+        /// <param name="zoom"></param>
+        /// <param name="latitude"></param>
+        /// <returns></returns>
+        public virtual double GetGroundResolution(int zoom, double latitude)
       {
          return (Math.Cos(latitude * (Math.PI / 180)) * 2 * Math.PI * Axis) / GetTileMatrixSizePixel(zoom).Width;
       }

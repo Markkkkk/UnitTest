@@ -43,5 +43,29 @@ namespace UnitTest.DataOperate
             }
             return dt;
         }
+
+        public static bool UpdatePicCount(string count, string gid)
+        {
+            try
+            {
+                using (SQLiteConnection cn = new SQLiteConnection())
+                {
+                    cn.ConnectionString = DataConnectionString;
+                    cn.Open();
+                    {
+                        SQLiteCommand cmd = new SQLiteCommand(string.Format("UPDATE city_province_2004 SET pic_count=@count WHERE gid =  '{0}';", gid), cn);
+                        cmd.Parameters.Add("count", DbType.String).Value = count;
+                        Console.WriteLine(cmd.ExecuteNonQuery().ToString());
+                    }
+                }
+                Console.WriteLine("-Success- Gid:{0}", gid);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("*Error* -- SQLiteError: " + ex);
+                return false;
+            }
+        }
     }
 }

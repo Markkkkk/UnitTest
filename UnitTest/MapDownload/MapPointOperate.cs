@@ -42,17 +42,36 @@ namespace UnitTest.MapDownload
                 double dllat2 = dt.Rows[j]["dl"].ToString().Equals(string.Empty) ? 0.0 : double.Parse(dt.Rows[j]["dl"].ToString().Split(' ')[1].ToString());
 
                 RectLatLng rect = new RectLatLng(tllat2, tllng2, trlng2 - tllng2, tllat2 - dllat2);
-
+                string totalCount = string.Empty;
+                for (int i = 1; i <= 18; i++)
+                {
+                    int count = GetPicCount(rect, i, 0);
+                    Console.WriteLine("Name:{0}, gid:{1}, zoom:{2}, count:{3}", jname, jgid, i.ToString(), count.ToString());
+                    if (i == 1)
+                    {
+                        totalCount += count.ToString();
+                    } else
+                    {
+                        totalCount += "," + count.ToString();
+                    }
+                }
+                Console.WriteLine(totalCount.ToString());
+                GisSqliteOperate.UpdatePicCount(totalCount, jgid);
 
             }
         }
 
-        private int GetPicCount(RectLatLng rect, int zoom, int padding)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="area"></param>
+        /// <param name="zoom"></param>
+        /// <param name="padding"></param>
+        /// <returns></returns>
+        private int GetPicCount(RectLatLng area, int zoom, int padding)
         {
 
-            int ret = 0;
-
-            //list = provider.Projection.GetAreaTileList(area, zoom, 0);
+            int ret = provider.Projection.GetAreaTileCount(area, zoom, 0);
 
             return ret;
 

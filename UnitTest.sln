@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{BF015B4E-D8C0-4D4C-983D-86B59BE66056}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GMap", "GMap", "{390A1C75-5255-4AD0-A388-76DB3D17D95D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GMap.NET.Core", "GMap.NET.Core\GMap.NET.Core.csproj", "{D0C39D9D-BED0-418B-9A5E-713176CAF40C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GMap.NET.WindowsForms", "GMap.NET.WindowsForms\GMap.NET.WindowsForms.csproj", "{E06DEF77-F933-42FB-AFD7-DB2D0D8D6A98}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		v4.0-Debug|Any CPU = v4.0-Debug|Any CPU
+		v4.0-Release|Any CPU = v4.0-Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF015B4E-D8C0-4D4C-983D-86B59BE66056}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF015B4E-D8C0-4D4C-983D-86B59BE66056}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF015B4E-D8C0-4D4C-983D-86B59BE66056}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF015B4E-D8C0-4D4C-983D-86B59BE66056}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF015B4E-D8C0-4D4C-983D-86B59BE66056}.v4.0-Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF015B4E-D8C0-4D4C-983D-86B59BE66056}.v4.0-Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF015B4E-D8C0-4D4C-983D-86B59BE66056}.v4.0-Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF015B4E-D8C0-4D4C-983D-86B59BE66056}.v4.0-Release|Any CPU.Build.0 = Release|Any CPU
+		{D0C39D9D-BED0-418B-9A5E-713176CAF40C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0C39D9D-BED0-418B-9A5E-713176CAF40C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0C39D9D-BED0-418B-9A5E-713176CAF40C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0C39D9D-BED0-418B-9A5E-713176CAF40C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0C39D9D-BED0-418B-9A5E-713176CAF40C}.v4.0-Debug|Any CPU.ActiveCfg = v4.0-Debug|Any CPU
+		{D0C39D9D-BED0-418B-9A5E-713176CAF40C}.v4.0-Debug|Any CPU.Build.0 = v4.0-Debug|Any CPU
+		{D0C39D9D-BED0-418B-9A5E-713176CAF40C}.v4.0-Release|Any CPU.ActiveCfg = v4.0-Release|Any CPU
+		{D0C39D9D-BED0-418B-9A5E-713176CAF40C}.v4.0-Release|Any CPU.Build.0 = v4.0-Release|Any CPU
+		{E06DEF77-F933-42FB-AFD7-DB2D0D8D6A98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E06DEF77-F933-42FB-AFD7-DB2D0D8D6A98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E06DEF77-F933-42FB-AFD7-DB2D0D8D6A98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E06DEF77-F933-42FB-AFD7-DB2D0D8D6A98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E06DEF77-F933-42FB-AFD7-DB2D0D8D6A98}.v4.0-Debug|Any CPU.ActiveCfg = v4.0-Debug|Any CPU
+		{E06DEF77-F933-42FB-AFD7-DB2D0D8D6A98}.v4.0-Debug|Any CPU.Build.0 = v4.0-Debug|Any CPU
+		{E06DEF77-F933-42FB-AFD7-DB2D0D8D6A98}.v4.0-Release|Any CPU.ActiveCfg = v4.0-Release|Any CPU
+		{E06DEF77-F933-42FB-AFD7-DB2D0D8D6A98}.v4.0-Release|Any CPU.Build.0 = v4.0-Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D0C39D9D-BED0-418B-9A5E-713176CAF40C} = {390A1C75-5255-4AD0-A388-76DB3D17D95D}
+		{E06DEF77-F933-42FB-AFD7-DB2D0D8D6A98} = {390A1C75-5255-4AD0-A388-76DB3D17D95D}
+	EndGlobalSection
+EndGlobal

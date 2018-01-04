@@ -3,3 +3,9 @@
 ################################################################################
 
 /.vs/UnitTest/v14
+/GMap.NET.Core/bin
+/GMap.NET.WindowsForms/bin
+/UnitTest/bin/Debug
+/UnitTest/obj/Debug
+/GMap.NET.WindowsForms/obj
+/GMap.NET.Core/obj
